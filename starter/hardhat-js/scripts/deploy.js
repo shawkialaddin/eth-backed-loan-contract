@@ -11,8 +11,11 @@ async function main() {
   // Deploy the contract
   const contract = await CollateralizedLoan.deploy();
 
-  // The contract is now deployed, and you can log its address
-  console.log(`CollateralizedLoan deployed successfully`);
+  await contract.waitForDeployment();
+
+  console.log(
+    `CollateralizedLoan deployed successfully at ${await contract.getAddress()}`
+  );
 }
 
 main()

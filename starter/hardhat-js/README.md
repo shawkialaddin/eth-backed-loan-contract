@@ -45,8 +45,8 @@ npm run verify:sepolia -- DEPLOYED_CONTRACT_ADDRESS
 
 ## Submission Link
 
-After deployment and verification, submit the Sepolia Etherscan URL:
+The current deployed and verified Sepolia contract is:
 
 ```text
-https://sepolia.etherscan.io/address/DEPLOYED_CONTRACT_ADDRESS
+https://sepolia.etherscan.io/address/0x9CB63f722de088Cb0dB8112973c82E7A48bF92c8#code
 ```

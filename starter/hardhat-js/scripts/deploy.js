@@ -13,9 +13,10 @@ async function main() {
 
   await contract.waitForDeployment();
 
-  console.log(
-    `CollateralizedLoan deployed successfully at ${await contract.getAddress()}`
-  );
+  const address = await contract.getAddress();
+
+  console.log(`CollateralizedLoan deployed successfully at ${address}`);
+  console.log(`Sepolia Etherscan: https://sepolia.etherscan.io/address/${address}`);
 }
 
 main()

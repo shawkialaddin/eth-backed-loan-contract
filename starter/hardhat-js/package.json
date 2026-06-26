@@ -2,7 +2,10 @@
   "name": "hardhat-project",
   "scripts": {
     "compile": "hardhat compile",
-    "deploy:test": "hardhat run --network sepolia-testnet scripts/deploy.js"
+    "deploy:sepolia": "hardhat run --network sepolia-testnet scripts/deploy.js",
+    "deploy:test": "hardhat run --network sepolia-testnet scripts/deploy.js",
+    "test": "hardhat test",
+    "verify:sepolia": "hardhat verify --network sepolia-testnet"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
